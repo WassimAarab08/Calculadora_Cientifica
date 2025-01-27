@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculador cientifica </title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div class="contenedor-calc">
+        <div class="tapa-calc" id="tapa-calc">
+            <div class="pantalla">
+                <input type="text" value="0" id="pantalla-calc" class="pantalla-calc" readonly>
+                <div class="btn-pantalla" id="btn-pantalla">
+                    <button class=" btn-mode" onclick="ocultarCientifica()">
+                        <img src="/icons/cientifica.svg" alt="" width="25px" height="25px">
+                    </button>
+                    <input type="text" value="" id="pantalla-calc2" class="pantalla-calc2" readonly>
+
+                    <button class=" btn-mode2" onclick="limpiarUltimaPoscion()">
+                        <img src="/icons/btn-borrar.svg" alt="" width="20px" height="20px">
+                    </button>
+                </div>
+            </div>
+            <div class="teclado-calc">
+                <div class="botones-calc-cientifica" id="botones-cientifica">
+
+
+
+                    <button class="btn-cientifica" onclick="limpiarMemoria()">mc</button>
+                    <button class="btn-cientifica" onclick="sumarMemoria()">m+</button>
+                    <button class="btn-cientifica" onclick="restarMemoria()">m-</button>
+                    <button class=" btn-cientifica" onclick="mostrarMemoria()">mr</button>
+                    <button class="btn-cientifica" onclick="pasraAbinario()">Binary</button>
+                    <button class="btn-cientifica" onclick="pasarHexa()">Hexa</button>
+                    <button class="btn-cientifica" onclick="elevar(2)">x²</button>
+                    <button class="btn-cientifica" onclick="elevar(3)">x³</button>
+                    <button class="btn-cientifica" onclick="concatenar('^')">xʸ</button>
+                    <button class="btn-cientifica" onclick="concatenar('e^')">eˣ</button>
+                    <button class="btn-cientifica" onclick="concatenar('10^')">10ˣ</button>
+                    <button class="btn-cientifica" onclick="concatenar('1/x')">1/x</button>
+                    <button class="btn-cientifica" onclick="concatenar('√')">√x</button>
+                    <button class="btn-cientifica" onclick="concatenar('³√')">³√x</button>
+                    <button class="btn-cientifica" onclick="concatenar('√')">ʸ√x</button>
+                    <button class="btn-cientifica" onclick="ln()">ln</button>
+                    <button class="btn-cientifica" onclick="logaritmo10()">log₁₀</button>
+                    <button class="btn-cientifica" onclick="calcularfactorial() ">x!</button>
+                    <button class="btn-cientifica" onclick="seno()">sin</button>
+                    <button class="btn-cientifica" onclick="cos()">cos</button>
+                    <button class="btn-cientifica" onclick="tangente()">tan</button>
+                    <button class="btn-cientifica" onclick="senoh()">sinh</button>
+                    <button class="btn-cientifica" onclick="cosh()">cosh</button>
+                    <button class="btn-cientifica" onclick="tanh()">tanh</button>
+                    <button class="btn-cientifica" onclick="concatenar('π')">π</button>
+                    <button class="btn-cientifica" onclick="generarNumeroAleatorio()">Rand</button>
+                    <button class="btn-cientifica" onclick="asin()">asin</button>
+                    <button class="btn-cientifica" onclick="acos()">acos</button>
+                    <button class="btn-cientifica" onclick="atan()">atan</button>
+                    <button class="btn-cientifica" onclick="asinh()">asinh</button>
+                    <button class="btn-cientifica" onclick="acosh()">acosh</button>
+                    <button class="btn-cientifica" onclick="atanh()">atanh</button>
+                    <button class="btn-cientifica" onclick="logaritmo()">log₂</button>
+                    <button class="btn-cientifica" onclick="calcularE()">e</button>
+                    <button class="btn-cientifica" id="btn-radianes" onclick="cambiarUnidades()">Rad</button>
+
+                </div>
+                <div class="botones-calc-simple">
+
+                    <button class="btn-simple btn-operacion btn-espcial2" onclick="limpiarPantalla()">C</button>
+                    <button class="btn-simple btn-operacion" onclick="concatenarParentesis()">( )</button>
+                    <button class="btn-simple btn-operacion" onclick="calcularPorcentaje()">%</button>
+                    <button class="btn-simple btn-operacion" onclick="concatenar('÷')">÷</button>
+                    <button class="btn-simple" onclick="concatenar(7)">7</button>
+                    <button class="btn-simple" onclick="concatenar(8)">8</button>
+                    <button class="btn-simple" onclick="concatenar(9)">9</button>
+                    <button class="btn-simple btn-operacion" onclick="concatenar('x')">x</button>
+                    <button class="btn-simple" onclick="concatenar(4)">4</button>
+                    <button class="btn-simple" onclick="concatenar(5)">5</button>
+                    <button class="btn-simple" onclick="concatenar(6)">6</button>
+                    <button class="btn-simple btn-operacion" onclick="concatenar('-')">-</button>
+                    <button class="btn-simple" onclick="concatenar(1)">1</button>
+                    <button class="btn-simple" onclick="concatenar(2)">2</button>
+                    <button class="btn-simple" onclick="concatenar(3)">3</button>
+                    <button class="btn-simple btn-operacion" onclick="concatenar('+')">+</button>
+                    <button class="btn-simple" onclick="pasarNegativoPostivo()">+/-</button>
+                    <button class="btn-simple" onclick="concatenar(0)">0</button>
+                    <button class="btn-simple" onclick="concatenar(',')">,</button>
+                    <button class=" btn-operacion btn-espcial1" onclick="calcular()">=</button>
+
+
+                </div>
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="calculadora.js"></script>
+</body>
+
+</html>
