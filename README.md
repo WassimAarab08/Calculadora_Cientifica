@@ -43,7 +43,7 @@ Una **calculadora web interactiva** que combina funciones básicas y científica
 ## ⚙️ **Instalación**  
 
 ```bash
-git clone https://github.com/tu-usuario/calculadora-cientifica.git
+git clone https://github.com/WassimAarab08/Calculadora_Cientifica.git
 cd calculadora-cientifica
 # Abre index.html en tu navegador
 ```
@@ -75,7 +75,3 @@ MIT License © 2025 WassimAarab08
 
 🐛 **Reportar Problemas**
 Si encuentras algún error, por favor abre un issue.
-
-```bash
-# Ejemplo de uso
-```
